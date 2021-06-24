@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_wakeLockMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wakeLock_Monitor" />
+
+    <Button
+        android:id="@+id/btn_locationMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location_Monitor" />
+
+    <Button
+        android:id="@+id/btn_wifiMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wifi_Monitor" />
+
+    <Button
+        android:id="@+id/btn_AlarmMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm_Monitor" />
+
+    <Button
+        android:id="@+id/btn_JobMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JobService_Monitor" />
+
+    <Button
+        android:id="@+id/btn_playVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="playVoice_Monitor" />
+
+    <Button
+        android:id="@+id/btn_stopVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stopVoice_Monitor" />
+</LinearLayout>
