@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.library'
 }
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.qgh-android'
 android {
     compileSdkVersion 30
     buildToolsVersion "28.0.3"
@@ -25,6 +26,15 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        //这里我写的时候是这个版本
+
     }
 }
 
