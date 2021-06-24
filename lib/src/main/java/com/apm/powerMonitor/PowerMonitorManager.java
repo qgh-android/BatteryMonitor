@@ -37,16 +37,16 @@ public class PowerMonitorManager {
         JobMonitor jobMonitor = new JobMonitor();
         jobMonitor.register(context);
 
-        dumpPhoneInfo();
+//        dumpPhoneInfo();
     }
 
-    private static void dumpPhoneInfo() {
-        ScheduledExecutorService executorService= Executors.newScheduledThreadPool(1);
-        executorService.scheduleAtFixedRate(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        },0,5, TimeUnit.SECONDS);
-    }
+//    private static void dumpPhoneInfo() {
+//        ScheduledExecutorService executorService= Executors.newScheduledThreadPool(1);
+//        executorService.scheduleAtFixedRate(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//            }
+//        },0,5, TimeUnit.SECONDS);
+//    }
 }
