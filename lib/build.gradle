@@ -28,15 +28,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        //这里我写的时候是这个版本
-
-    }
-}
 
 dependencies {
 
