@@ -42,10 +42,13 @@ public class ActivityManagerMonitor implements IMonitor {
                         stringBuilder.append(", " + intentFilter.getAction(i));
                     }
                 }
+
                 Log.i(PowerMonitorManager.TAG, "ActivityManager, registerReceiver, action=" + stringBuilder.toString() +
                         ", args=" + Arrays.toString(args));
+                Log.e(PowerMonitorManager.TAG, "***registerReceiver-StackTraceStart***");
+                Log.e(PowerMonitorManager.TAG, Log.getStackTraceString(new Throwable()));
+                Log.e(PowerMonitorManager.TAG, "***registerReceiver-StackTraceEnd***");
             } else if ("unregisterReceiver".equals(method.getName())) {
-
                 Log.i(PowerMonitorManager.TAG, "ActivityManager, unregisterReceiver" + ", args=" + Arrays.toString(args));
             } else if ("serviceDoneExecuting".equals(method.getName())) {
                 int res = (int) args[3];
